@@ -138,6 +138,36 @@ body {
 	background: #FAF5E9;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+p{
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.lees-meer{
+    border: none;
+    background: #E88FBC;
+    width: 238.7px;
+    height: 82.63px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
 .bg-cont {
 	background-image: url('/assets/background/bg-header.svg');
 	background-size: cover;
@@ -250,134 +280,144 @@ body {
 	scale: .7;
 }
 
-.belang-cont {
-	display: flex;
-	justify-content: space-between;
-	max-width: 1275px;
-	margin: 0 auto;
-	padding-top: 100px;
+/* Belang Code */
+
+.belang-cont{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1275px;
+    margin: 0 auto;
+    padding-top: 100px;
 
 
 }
 
-.belang-item-img {
-	width: 588px;
+.belang-item-img{
+    width: 588px;
 }
 
 
-.belang-item-p {
-	width: 547px;
+.belang-item-p{
+    width: 547px;
 }
 
-.belang-item-p h1 {
-	margin-bottom: 34px;
+.belang-item-p h1{
+    margin-bottom: 34px;
+}
+.belang-item-p p{
+    margin-bottom: 60px;
 }
 
-.belang-item-p p {
-	margin-bottom: 60px;
+
+
+.belang-smiley{
+    margin-left: 334px;
+}
+
+
+/* Coderen voor kinderen */
+
+.jong-cont{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1209px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.jong-item-p{
+    width: 547px;
+}
+
+.jong-item-img{
+    width: 567px;
+}
+
+.jong-item-p h1{
+    margin-top: 47px;
+    margin-bottom: 36px;
+    width: 502.5px;
+}
+
+.jong-item-p p{
+    margin-bottom: 64px;
+}
+
+.jong-smiley{
+    margin-left: 281px;
+}
+
+/* Workshops */
+
+.workshop-header{
+    width: 667px;
+    margin: 135px auto 0;
+    text-align: center;
+
 }
 
 
 
-.belang-smiley {
-	margin-left: 334px;
+.workshop-header p{
+    margin-top: 94px;
 }
 
-.jong-cont {
-	display: flex;
-	justify-content: space-between;
-	max-width: 1209px;
-	margin: 0 auto;
-	padding-top: 100px;
+.workshop-cont{
+    display: flex;
+    max-width: 999px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 94px;
 }
 
-.jong-item-p {
-	width: 547px;
+.workshop-item{
+    width: 325px
+    
 }
 
-.jong-item-img {
-	width: 567px;
+
+.workshop-item h1{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
-.jong-item-p h1 {
-	margin-top: 47px;
-	margin-bottom: 36px;
-	width: 502.5px;
+
+.workshop-item p{
+    margin-bottom: 30px;
 }
 
-.jong-item-p p {
-	margin-bottom: 64px;
+.workshop-item .lees-meer{
+    border-radius: 40px;
 }
 
-.jong-smiley {
-	margin-left: 281px;
+
+/* Expositie */
+
+.blob-cont{
+    background-image: url('/assets/background/achtergrond-blob.png');
+    background-size: cover;
+    width: 100%;
+    height: 1709px;
+    margin-top: 96px;
 }
 
-.workshop-header {
-	width: 667px;
-	margin: 135px auto 0;
+.expositie-header{
+    display: block;
+    width: 511px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.workshop-header h1 {
-	text-align: center;
+.expositie-header h1{
+    margin-top: 157px;
+    margin-bottom: 11px;
 }
 
-.workshop-header p {
-	margin-top: 94px;
-	text-align: center;
-}
-
-h1 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 45px;
-	font-weight: bold;
-	line-height: 50px;
-}
-
-p {
-	font-family: 'Lora', serif;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 31px;
-}
-
-.lees-meer {
-	border: none;
-	background: #E88FBC;
-	width: 238.7px;
-	height: 82.63px;
-	border-radius: 25px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 25px;
-}
-
-.workshop-header {
-	width: 667px;
-	margin: 135px auto 0;
-}
-
-.workshop-header h1 {
-	text-align: center;
-}
-
-.workshop-header p {
-	margin-top: 94px;
-	text-align: center;
-}
-
-.workshop-cont {
-	display: flex;
-	max-width: 999px;
-	justify-content: space-between;
-	margin: 0 auto;
-	margin-top: 94px;
-}
-
-.workshop-item {
-	width: 325.97px
-}
-
-.workshop-item h1 {
-	font-size: 30px;
+.expositie-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 932px;
+    margin: 100px auto 0;
 }
