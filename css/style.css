@@ -168,6 +168,10 @@ p{
     font-size: 25px;
 }
 
+
+
+/* Header */
+
 .bg-cont {
 	background-image: url('/assets/background/bg-header.svg');
 	background-size: cover;
@@ -394,9 +398,10 @@ p{
 
 /* Expositie */
 
-.blob-cont{
+.mid-blob{
     background-image: url('/assets/background/achtergrond-blob.png');
     background-size: cover;
+	background-position: 0;
     width: 100%;
     height: 1709px;
     margin-top: 96px;
@@ -420,4 +425,33 @@ p{
     justify-content: space-between;
     width: 932px;
     margin: 100px auto 0;
+}
+
+
+/* Docu */
+
+.docu-header{
+	display: block;
+	width: 666px;
+	margin: 0 auto;
+    text-align: center;
+	margin-top: 134px;
+	margin-bottom: 113px;
+}
+
+.docu-container{
+	width: 64.5%;
+	margin: 0 auto;
+}
+
+
+/* Footer */
+
+.footer-blob{
+	background-image: url('/assets/background/footer-blob.png');
+    background-size: cover;
+	background-position: 0;
+    width: 100%;
+    height: 639px;
+    margin-top: 96px;
 }
