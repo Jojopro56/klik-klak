@@ -298,19 +298,19 @@ p {
 .belang-cont {
 	display: flex;
 	justify-content: space-between;
-	max-width: 1275px;
+	max-width: 80%;
 	margin: 0 auto;
 	padding-top: 100px;
 
 }
 
 .belang-item-img {
-	width: 588px;
+	width: 50%;
 }
 
 
 .belang-item-p {
-	width: 547px;
+	width: 48%;
 }
 
 .belang-item-p h1 {
@@ -333,23 +333,23 @@ p {
 .jong-cont {
 	display: flex;
 	justify-content: space-between;
-	max-width: 1209px;
+	max-width: 80%;
 	margin: 0 auto;
 	padding-top: 100px;
 }
 
 .jong-item-p {
-	width: 547px;
+	width: 48%;
 }
 
 .jong-item-img {
-	width: 567px;
+	width: 48%;
 }
 
 .jong-item-p h1 {
 	margin-top: 47px;
 	margin-bottom: 36px;
-	width: 502.5px;
+	width: 50%
 }
 
 .jong-item-p p {
@@ -363,7 +363,7 @@ p {
 /* Workshops */
 
 .workshop-header {
-	width: 667px;
+	width: 40%;
 	margin: 135px auto 0;
 	text-align: center;
 
@@ -377,14 +377,14 @@ p {
 
 .workshop-cont {
 	display: flex;
-	max-width: 999px;
+	max-width: 75%;
 	justify-content: space-between;
 	margin: 0 auto;
 	margin-top: 94px;
 }
 
 .workshop-item {
-	width: 325px
+	width: 33%;
 }
 
 
@@ -432,7 +432,7 @@ p {
 
 .expositie-header {
 	display: block;
-	width: 511px;
+	width: 35%;
 	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
@@ -448,7 +448,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 932px;
+	width: 70%;
 	margin: 100px auto 0;
 }
 
@@ -457,7 +457,7 @@ p {
 
 .docu-header {
 	display: block;
-	width: 666px;
+	width: 40%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 145px;
@@ -492,7 +492,7 @@ p {
 
 .footer-cont {
 	display: flex;
-	max-width: 1300px;
+	max-width: 90%;
 	justify-content: space-around;
 	margin: 100px auto 0;
 }
@@ -525,3 +525,7 @@ p {
 	width: 10px;
 	background-color: black;
 }
+
+/* @media screen and (max-width: 699px) {
+
+} */

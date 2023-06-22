@@ -320,6 +320,122 @@ p{
 	margin-bottom: 60px;
 }
 
+/* Het lesplan */
+
+.lesplan-header {
+	width: 40%;
+	margin: 135px auto 0;
+	text-align: center;
+
+}
 
 
 
+/* Les 1 */
+
+.les1-cont {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.les1-item-img {
+	width: 588px;
+}
+
+
+.les1-item-p {
+	width: 547px;
+}
+
+.les1-item-p h1 {
+	margin-bottom: 34px;
+}
+
+.les1-item-p p {
+	margin-bottom: 60px;
+}
+
+
+/* les 2 */
+.les2-cont {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.les2-item-img {
+	width: 588px;
+}
+
+
+.les2-item-p {
+	width: 547px;
+}
+
+.les2-item-p h1 {
+	margin-bottom: 34px;
+}
+
+.les2-item-p p {
+	margin-bottom: 60px;
+}
+
+/* les 3 */
+.les3-cont {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.les3-item-img {
+	width: 588px;
+}
+
+
+.les3-item-p {
+	width: 547px;
+}
+
+.les3-item-p h1 {
+	margin-bottom: 34px;
+}
+
+.les3-item-p p {
+	margin-bottom: 60px;
+}
+
+/* download de workshop */
+
+.download-header {
+	width: 40%;
+	margin: 135px auto 0;
+	text-align: center;
+
+}
+
+.download-header p {
+	margin-top: 54px;
+}
+
+.download {
+	border-radius: 40px;
+	margin-top: 94px;
+}
+
+/* boek een workshop */
+
+.boek-header {
+	width: 40%;
+	margin: 135px auto 0;
+	text-align: center;
+}
