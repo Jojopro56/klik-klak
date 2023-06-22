@@ -125,12 +125,38 @@
         <div class="download-header">
             <h1>Download de workshop</h1>
             <p>Download hier alle content van de eerste workshop!</p>
-            <button class="download">DOWNLOAD</button>
+            <a href="/assets/Belang-img.png" class="download" download="">DOWNLOAD</a>
         </div>
 
-        <div class="boek-header">
-            <h1>BOEK EEN WORKSHOP</h1>
+        <div class="form">
+            <div class="form-cont">
+                <h2>BOEK EEN WORKSHOP</h2>
+                <textarea class="input-message" type="text" placeholder="Type Hier Je Bericht..."></textarea>
+                <div class="email-cont">
+                    <input class="input-mail" type="text" placeholder="E-mailadres">
+                    <button onclick="emptyFields()" class="submit-message">VERSTUUR</button>
+                </div>
+            </div>
         </div>
 
-    </main>
+        <!-- mail -->
+
+        <div class="send-mail">
+
+            <!-- Modal -->
+            <div id="myModal-4" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close close4">&times;</span>
+                    <h2>Message Send</h2>
+                    <div class="post-content">
+                        <p>We have received your message, we'll respond as soon as possible. Kudos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Klik Klak Homepage</title>
 </head>
 
@@ -27,15 +28,15 @@
         <div class="bg-cont">
             <div class="header-cont">
                 <div class="logo-top">
-                    <a href="workshop.html"><img src="assets/logo/Group 2.svg"></a>
+                    <a href="index.html"><img src="assets/logo/Group 2.svg"></a>
                 </div>
                 <nav>
                     <ul>
                         <div class="hv3"><img src="assets/icons/kruisje-strretje-pink.svg" alt=""></div>
-                        <li><a href=""></a>CONTACT</li>
-                        <li><a href=""></a>OVER ONS</li>
-                        <li><a href=""></a>WAAROM CODE</li>
-                        <li><a href=""></a>DE WORKSHOPS</li>
+                        <li><a href="#"></a>CONTACT</li>
+                        <li><a href="#"></a>OVER ONS</li>
+                        <li><a href="#"></a>WAAROM CODE</li>
+                        <li><a href="workshop.html"></a>DE WORKSHOPS</li>
                     </ul>
                 </nav>
             </div>
@@ -47,6 +48,7 @@
     <main>
         <div class="belang-cont">
             <div class="belang-item-img">
+                <div class="scribble scribble-belang"><img src="assets/icons/scribble-line.svg" alt=""></div>
                 <img src="assets/img/Belang-img.png" alt="">
             </div>
             <div class="belang-item-p">
@@ -62,6 +64,8 @@
 
         <div class="jong-cont">
             <div class="jong-item-p">
+                <div class="twister twister-jong"><img src="assets/icons/Twister.svg" alt=""></div>
+                <div class="kruisje-sterretje ks-jong"><img src="assets/icons/kruisje-sterretje-zwart.svg" alt=""></div>
                 <h1>Coderen voor kinderen </h1>
                 <p>De generatie die hier het meeste bij stilstaat, is de jonge generatie. Onze wereld is de afgelopen 20
                     jaar gedigitaliseerd en aangezien jongeren hiermee opgroeien, zijn zij de oudere generaties al
@@ -85,26 +89,27 @@
         </div>
 
         <div class="workshop-cont">
+
             <div class="workshop-item workshop-item-1">
                 <img src="assets/img/workshop-img-1.png" alt="">
                 <h1>Kunst met Code</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                     laoreet dolore Lorem ip</p>
-                <a href="workshop.html">LEES MEER! </a>
+                <button class="lees-meer">LEES MEER!</button>
             </div>
             <div class="workshop-item workshop-item-2">
                 <img src="assets/img/workshop-img-2.png" alt="">
-                <h1>Codeer je Creativiteit</h1>
+                <h1>Kunst met Code</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                     laoreet dolore Lorem ip</p>
                 <button class="lees-meer">LEES MEER!</button>
             </div>
             <div class="workshop-item workshop-item-3">
                 <img src="assets/img/workshop-img-3.png" alt="">
-                <h1>Codeerboost</h1>
+                <h1>Kunst met Code</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                     laoreet dolore Lorem ip</p>
-                <button class="lees-meer">LEES MEER!</button>
+                <a href="workshop.html" class="lees-meer">LEES MEER!</a>
             </div>
         </div>
 
@@ -117,15 +122,46 @@
             </div>
 
             <div class="expositie-cont">
-                <div class="Expositie-item Expositie-item-1">
-                    <img src="assets/img/expo-1.png" alt="">
+                <div id="gallery">
+                    <ul id="imageList">
+                        <li><img src="assets/werkjes/alien (1).svg" alt="Image 1"></li>
+                        <li><img src="assets/werkjes/alien (2).svg" alt="Image 2"></li>
+                        <li><img src="assets/werkjes/alien (3).svg" alt="Image 3"></li>
+                        <li><img src="assets/werkjes/alien (4).svg" alt="Image 4"></li>
+                        <li><img src="assets/werkjes/alien (5).svg" alt="Image 5"></li>
+                        <li><img src="assets/werkjes/alien (6).svg" alt="Image 6"></li>
+                        <li><img src="assets/werkjes/alien (7).svg" alt="Image 7"></li>
+                        <li><img src="assets/werkjes/alien (8).svg" alt="Image 8"></li>
+                        <li><img src="assets/werkjes/alien (9).svg" alt="Image 9"></li>
+                        <li><img src="assets/werkjes/alien (10).svg" alt="Image 10"></li>
+                        <li><img src="assets/werkjes/alien (11).svg" alt="Image 11"></li>
+                        <li><img src="assets/werkjes/alien (12).svg" alt="Image 12"></li>
+                        <li><img src="assets/werkjes/alien (13).svg" alt="Image 13"></li>
+                        <li><img src="assets/werkjes/alien (14).svg" alt="Image 14"></li>
+                        <li><img src="assets/werkjes/alien (15).svg" alt="Image 15"></li>
+                        <li><img src="assets/werkjes/alien (16).svg" alt="Image 16"></li>
+                        <li><img src="assets/werkjes/alien (17).svg" alt="Image 17"></li>
+                        <li><img src="assets/werkjes/alien (18).svg" alt="Image 18"></li>
+                        <li><img src="assets/werkjes/alien (19).svg" alt="Image 19"></li>
+                        <li><img src="assets/werkjes/alien (20).svg" alt="Image 20"></li>
+                        <li><img src="assets/werkjes/alien (21).svg" alt="Image 21"></li>
+                        <li><img src="assets/werkjes/alien (22).svg" alt="Image 22"></li>
+                        <li><img src="assets/werkjes/alien (23).svg" alt="Image 23"></li>
+                        <li><img src="assets/werkjes/alien (24).svg" alt="Image 24"></li>
+                        <li><img src="assets/werkjes/alien (25).svg" alt="Image 25"></li>
+                        <li><img src="assets/werkjes/alien (26).svg" alt="Image 26"></li>
+                        <li><img src="assets/werkjes/alien (27).svg" alt="Image 27"></li>
+                        <li><img src="assets/werkjes/alien (28).svg" alt="Image 28"></li>
+
+
+                        <!-- Hier meer foto's toevoegen -->
+                    </ul>
+
+
                 </div>
-                <div class="Expositie-item Expositie-item-2">
-                    <img src="assets/img/expo-2.png" alt="">
-                </div>
-                <div class="Expositie-item Expositie-item-3">
-                    <img src="assets/img/expo-3.png" alt="">
-                </div>
+
+                <div class="prev next-button"><img src="assets/icons/next-button.svg" alt=""></div>
+                <div class="next prev-button"><img src="assets/icons/prev-button.svg" alt=""></div>
             </div>
 
             <div class="docu-header">
@@ -133,8 +169,17 @@
                 <p>Nog steeds niet overtuigd van het belang van code? Kijk hoe 112 code gebruikt in onze mini-docu!</p>
             </div>
 
-            <div class="docu-cont">
-                <img src="assets/img/docu-thumb.png" alt="">
+            <div class="video-cont">
+                <div class="videoContent">
+                    <video id="videoPlayer" loop>
+                        <source class="videoSource"
+                            src="https://player.vimeo.com/progressive_redirect/playback/837114798/rendition/1080p/file.mp4?loc=external&signature=f74869e8a1143b1db43aca4ac3dc334488d417d3067fc1fbdbd135e4c4fc81c5"
+                            type="video/mp4">
+                    </video>
+                    <button id="videoBtn">
+                        <div class="triangle"><img src="assets/icons/play.svg" alt=""></div>
+                    </button>
+                </div>
             </div>
         </div>
 

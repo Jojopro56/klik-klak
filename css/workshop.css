@@ -138,41 +138,41 @@ body {
 	background: #FAF5E9;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    line-height: 50px;
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 50px;
 }
 
-h2{
+h2 {
 	font-family: Poppins;
 	font-weight: bold;
 	font-size: 31px;
 	text-align: center;
 }
 
-p{
-    font-family: 'Lora', serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
+p {
+	font-family: 'Lora', serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31px;
 }
 
-.lees-meer{
-    border: none;
-    background: #E88FBC;
-    width: 238.7px;
-    height: 82.63px;
-    border-radius: 25px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
+.lees-meer {
+	border: none;
+	background: #E88FBC;
+	width: 238.7px;
+	height: 82.63px;
+	border-radius: 25px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
 }
 
 
@@ -202,7 +202,7 @@ p{
 	display: block;
 	margin-left: 5%;
 	margin-bottom: 3%;
-    z-index: 3;
+	z-index: 3;
 }
 
 .logo-top img {
@@ -309,7 +309,6 @@ p{
 
 .kunst-item-p {
 	width: 40%
-
 }
 
 .kunst-item-p h1 {
@@ -434,8 +433,164 @@ p{
 
 /* boek een workshop */
 
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+		background: red;
+		opacity: 1;
+	}
+
+	25% {
+		transform: translateX(-8px);
+		background: red;
+		opacity: .4;
+	}
+
+	75% {
+		transform: translateX(8px);
+		background: red;
+		opacity: .4;
+	}
+
+	100% {
+		transform: translateX(0);
+		background: red;
+		opacity: 1;
+	}
+}
+
+.shake {
+	animation: shake 0.4s ease-in-out;
+}
+
 .boek-header {
 	width: 40%;
 	margin: 135px auto 0;
 	text-align: center;
+}
+
+.form {
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+}
+
+.form-cont {
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding-bottom: 60px;
+	text-align: center;
+	width: 70%;
+	height: auto;
+}
+
+.form-cont h2 {
+	position: relative;
+	color: #090909;
+	padding-top: 20px;
+}
+
+.input-message {
+	display: block;
+	width: 100%;
+	height: 200px;
+	border: 6px solid #090909;
+	border-radius: 10px;
+	background: none;
+	color: #E88FBC;
+	padding: 5px;
+	margin-top: 60px;
+}
+
+.input-mail {
+	display: block;
+	width: 60%;
+	height: auto;
+	border: 3px solid #090909;
+	border-radius: 10px;
+	background: none;
+	color: #E88FBC;
+	padding: 5px;
+}
+
+.email-cont {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 60px;
+	height: 40px;
+}
+
+.submit-message {
+	border: none;
+	background: none;
+	background-color: #E88FBC;
+	border-radius: 25px;
+	font-weight: 700;
+
+	width: 20%;
+}
+
+.submit-message:hover {
+	background-color: #888;
+}
+
+.modal {
+	display: none;
+
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	/*Opacity veranderen, zonder kleur te veranderen*/
+
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.post-content {
+	display: flex;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.post-content img {
+	max-width: 100%;
+	max-height: 200px;
+	object-fit: contain;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.post-content img.expanded {
+	max-width: none;
+	max-height: none;
+	width: auto;
+	height: auto;
 }
