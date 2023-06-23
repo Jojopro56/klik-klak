@@ -334,6 +334,7 @@ p {
 
 .jong-cont {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	max-width: 1209px;
 	margin: 0 auto;
@@ -366,7 +367,7 @@ p {
 /* Workshops */
 
 .workshop-header {
-	width: 667px;
+	width: 40%;
 	margin: 135px auto 0;
 	text-align: center;
 
@@ -380,6 +381,7 @@ p {
 
 .workshop-cont {
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 	max-width: 999px;
 	justify-content: space-between;
@@ -396,6 +398,21 @@ p {
 	margin-top: 35px;
 	margin-bottom: 10px;
 	font-size: 30px;
+}
+
+.workshop-item-1 a {
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	display: block;
+	background: #E88FBC;
+	width: 238.7px;
+	height: 82.63px;
+	border-radius: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 82.63px;
 }
 
 
@@ -583,7 +600,7 @@ p {
 	display: flex;
 	position: relative;
 	align-items: center;
-	justify-content: space-between; 
+	justify-content: space-between;
 	width: 932px;
 	margin: 100px auto 0;
 }
@@ -698,4 +715,123 @@ p {
 	left: 70%;
 	top: 0%;
 	z-index: -1;
+}
+
+
+@media screen and (max-width: 395px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+
+
+		font-size: 20px;
+
+	}
+
+	p {
+		font-weight: 500;
+		font-size: 20px;
+		text-align: center;
+
+	}
+
+	.lees-meer {
+		display: inline;
+		width: 100px;
+		height: 37px;
+		border-radius: 10px;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	.scribble {
+		display: none;
+	}
+
+	.belang-cont {
+		max-width: 320px;
+		margin: 0 auto;
+		padding-top: 85px;
+
+	}
+
+	.belang-item-img {
+		position: relative;
+		width: 308px;
+	}
+
+
+	.belang-item-p {
+		width: 320px;
+	}
+
+	.belang-item-p h1 {
+		margin-bottom: 20px;
+	}
+
+	.belang-item-p p {
+		margin-bottom: 30px;
+	}
+
+	.belang-item-p .lees-meer {
+		margin-left: 90px;
+	}
+
+	.belang-smiley {
+		margin-left: 90px;
+		margin-top: 70px;
+	}
+
+	.workshop-item-1 a {
+		width: 100px;
+		height: 37px;
+		border-radius: 25px;
+		font-size: 13px;
+		line-height: 40px;
+	}
+
+	/* Coderen voor kinderen */
+
+	.twister {
+		display: none;
+	}
+
+	.jong-cont {
+
+		max-width: 320px;
+
+		padding-top: 30px;
+	}
+
+	.jong-item-p {
+
+		width: 320px;
+	}
+
+	.jong-item-img {
+		width: 256px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.jong-item-p h1 {
+		margin-top: 47px;
+		margin-bottom: 36px;
+		width: 320px;
+
+	}
+
+	.jong-item-p p {
+		margin-bottom: 25px;
+	}
+
+	.jong-item-p .lees-meer {
+		margin-left: 100px;
+	}
+
+	.jong-smiley {
+		display: none;
+	}
 }
