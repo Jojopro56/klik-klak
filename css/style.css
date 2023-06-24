@@ -151,7 +151,7 @@ h1 {
 }
 
 h2 {
-	font-family: Poppins;
+	font-family: 'Poppins';
 	font-weight: bold;
 	font-size: 31px;
 	text-align: center;
@@ -177,6 +177,8 @@ p {
 
 
 
+
+
 /* Header */
 
 .bg-cont {
@@ -188,12 +190,16 @@ p {
 	height: 423px;
 }
 
+.hamburger {
+	display: none;
+}
+
 .header-cont {
 	display: flex;
 	margin: 0 auto;
 	align-items: center;
 	justify-content: space-evenly;
-	max-width: 1440px;
+	max-width: 100%;
 	height: 370px;
 
 }
@@ -202,6 +208,7 @@ p {
 	display: block;
 	margin-left: 5%;
 	margin-bottom: 3%;
+	z-index: 3;
 }
 
 .logo-top img {
@@ -253,8 +260,8 @@ p {
 
 .hv3 {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 40%;
+	left: 25%;
 	z-index: 2;
 }
 
@@ -298,8 +305,8 @@ p {
 .belang-cont {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 1275px;
+	justify-content: space-around;
+	max-width: 88%;
 	margin: 0 auto;
 	padding-top: 100px;
 
@@ -335,8 +342,8 @@ p {
 .jong-cont {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 1209px;
+	justify-content: space-around;
+	max-width: 84%;
 	margin: 0 auto;
 	padding-top: 100px;
 }
@@ -364,6 +371,10 @@ p {
 	margin-left: 281px;
 }
 
+.swirl {
+	display: none;
+}
+
 /* Workshops */
 
 .workshop-header {
@@ -383,8 +394,8 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	max-width: 999px;
-	justify-content: space-between;
+	max-width: 69%;
+	justify-content: space-around;
 	margin: 0 auto;
 	margin-top: 94px;
 }
@@ -450,7 +461,6 @@ p {
 #gallery ul {
 	list-style-type: none;
 	width: calc(100% - 40px);
-	/* Adjust the width to accommodate the buttons */
 	padding: 0;
 	margin: 0;
 	white-space: nowrap;
@@ -494,13 +504,63 @@ p {
 	opacity: .8;
 }
 
-/*video*/
+
+
+.mid-blob {
+	background-image: url('/assets/background/mid-blob.png');
+	background-size: cover;
+	width: 100%;
+	height: 1709px;
+	margin-top: 96px;
+	padding-bottom: 96px;
+
+}
+
+.expositie-header {
+	display: block;
+	width: 511px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+.expositie-header h1 {
+	margin-top: 157px;
+	margin-bottom: 11px;
+}
+
+.expositie-cont {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	width: 932px;
+	margin: 100px auto 0;
+}
+
+
+/* Docu */
+
+.docu-header {
+	display: block;
+	width: 46.25%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 145px;
+	margin-bottom: 104px;
+
+}
 
 .video-cont {
 	position: relative;
 	margin: 0 auto;
 	margin-top: 100px;
 	width: 70%;
+}
+
+.videoPlayer {
+	width: 500px;
 }
 
 .video-cont span {
@@ -572,58 +632,6 @@ p {
 }
 
 
-.mid-blob {
-	background-image: url('/assets/background/mid-blob.png');
-	background-size: cover;
-	width: 100%;
-	height: 1709px;
-	margin-top: 96px;
-	padding-bottom: 96px;
-
-}
-
-.expositie-header {
-	display: block;
-	width: 511px;
-	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
-
-}
-
-.expositie-header h1 {
-	margin-top: 157px;
-	margin-bottom: 11px;
-}
-
-.expositie-cont {
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: space-between;
-	width: 932px;
-	margin: 100px auto 0;
-}
-
-
-/* Docu */
-
-.docu-header {
-	display: block;
-	width: 666px;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 145px;
-	margin-bottom: 104px;
-
-}
-
-.docu-cont {
-	width: 64.5%;
-	margin: 0 auto;
-}
-
-
 /* Footer */
 
 .footer-blob {
@@ -645,14 +653,13 @@ p {
 
 .footer-cont {
 	display: flex;
-	max-width: 1300px;
+	flex-wrap: wrap;
+	max-width: 90%;
 	justify-content: space-around;
 	margin: 100px auto 0;
 }
 
-.footer-item {
-	width: 28%;
-}
+
 
 .footer-item h2 {
 	margin-bottom: 30px;
@@ -664,7 +671,7 @@ p {
 }
 
 .footer-item {
-	width: calc(28% - 20px - 20px);
+	width: 308px;
 }
 
 .footer-item-2 {
@@ -718,14 +725,13 @@ p {
 }
 
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 425px) {
 	h1 {
 		font-size: 36px;
+		text-align: center;
 	}
 
 	h2 {
-
-
 		font-size: 20px;
 
 	}
@@ -734,45 +740,96 @@ p {
 		font-weight: 500;
 		font-size: 20px;
 		text-align: center;
+		line-height: 25px;
 
 	}
 
 	.lees-meer {
-		display: inline;
 		width: 100px;
 		height: 37px;
 		border-radius: 10px;
 		font-size: 13px;
-		text-align: center;
+
 	}
 
 	.scribble {
 		display: none;
 	}
 
+
+	/* header */
+
+	.none {
+		display: none;
+	}
+
+	.header-cont ul {
+		display: none;
+	}
+
+	.logo-top {
+		position: absolute;
+		z-index: 3;
+	}
+
+	.logo-top img {
+		max-width: 80%;
+	}
+
+	.hv3 {
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		z-index: 2;
+		scale: 0.7;
+	}
+
+	.hv6 {
+		position: absolute;
+		top: 60%;
+		left: 70%;
+		z-index: 2;
+		scale: 0.6;
+	}
+
+	.hv8 {
+		position: absolute;
+		top: 70%;
+		left: 2%;
+		z-index: 2;
+		scale: 0.5;
+	}
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		top: 8%;
+		left: 70%;
+	}
+
+
+
+	/* Belang van Code */
+
 	.belang-cont {
 		max-width: 320px;
-		margin: 0 auto;
-		padding-top: 85px;
-
+		position: relative;
 	}
 
 	.belang-item-img {
-		position: relative;
 		width: 308px;
+		margin-top: 200px;
 	}
 
 
 	.belang-item-p {
 		width: 320px;
+		margin-top: 20px;
 	}
 
-	.belang-item-p h1 {
-		margin-bottom: 20px;
-	}
-
-	.belang-item-p p {
-		margin-bottom: 30px;
+	.belang-item-p h1{
+		position: absolute;
+		top: 15%;
 	}
 
 	.belang-item-p .lees-meer {
@@ -784,29 +841,22 @@ p {
 		margin-top: 70px;
 	}
 
-	.workshop-item-1 a {
-		width: 100px;
-		height: 37px;
-		border-radius: 25px;
-		font-size: 13px;
-		line-height: 40px;
-	}
-
 	/* Coderen voor kinderen */
+
+	.kruisje-sterretje {
+		display: none;
+	}
 
 	.twister {
 		display: none;
 	}
 
 	.jong-cont {
-
 		max-width: 320px;
-
 		padding-top: 30px;
 	}
 
 	.jong-item-p {
-
 		width: 320px;
 	}
 
@@ -817,15 +867,10 @@ p {
 	}
 
 	.jong-item-p h1 {
-		margin-top: 47px;
-		margin-bottom: 36px;
 		width: 320px;
 
 	}
 
-	.jong-item-p p {
-		margin-bottom: 25px;
-	}
 
 	.jong-item-p .lees-meer {
 		margin-left: 100px;
@@ -834,4 +879,81 @@ p {
 	.jong-smiley {
 		display: none;
 	}
+
+	.swirl {
+		display: inline-block;
+		margin-left: 60px;
+		margin-top: 30px;
+	}
+
+	/* Workshops */
+
+	.workshop-header {
+		width: 82%;
+		margin: 40px auto 0;
+
+	}
+
+	.workshop-item-1 a {
+		width: 100px;
+		height: 37px;
+		border-radius: 25px;
+		font-size: 13px;
+		line-height: 40px;
+	}
+
+
+	.workshop-header p {
+		width: 320px;
+
+	}
+
+
+
+	.workshop-item {
+		width: 256px;
+		margin-bottom: 55px;
+
+	}
+
+	/* docu */
+
+	.docu-header {
+		width: 79%;
+	}
+
+	/* footer */
+
+	.footer-blob {
+		height: 1000px;
+	}
+
+	.footer-item {
+		width: 269px;
+		margin-bottom: 50px;
+	}
+
+	.footer-cont p {
+		line-height: 10px;
+	}
+
+	.footer-item-2 {
+		display: none;
+	}
+
+	.footer-item-4 {
+		display: none;
+	}
+
+
+	.logo-bottom {
+		display: block;
+		position: absolute;
+		margin-left: 31%;
+		margin-top: 180%;
+		max-width: 40%;
+	}
+
+
+
 }

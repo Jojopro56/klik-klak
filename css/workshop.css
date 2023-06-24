@@ -188,6 +188,10 @@ p {
 	height: 423px;
 }
 
+.hamburger {
+	display: none;
+}
+
 .header-cont {
 	display: flex;
 	margin: 0 auto;
@@ -250,10 +254,10 @@ p {
 }
 
 .hv3 {
-	position: relative;
-	right: 17%;
-	margin-top: 20%;
-	scale: .6;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	z-index: 2;
 }
 
 .hv4 {
@@ -295,20 +299,21 @@ p {
 
 .kunst-cont {
 	display: flex;
-	justify-content: space-between;
-	max-width: 1275px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 88.5%;
 	margin: 0 auto;
 	padding-top: 100px;
 	align-items: center;
 }
 
 .kunst-item-img {
-	width: 50%
+	width: 583px;
 }
 
 
 .kunst-item-p {
-	width: 40%
+	width: 540px
 }
 
 .kunst-item-p h1 {
@@ -334,20 +339,21 @@ p {
 
 .les1-cont {
 	display: flex;
-	justify-content: space-between;
-	max-width: 1275px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 88.5%;
 	margin: 0 auto;
 	padding-top: 100px;
 	align-items: center;
 }
 
 .les1-item-img {
-	width: 588px;
+	width: 493px;
 }
 
 
 .les1-item-p {
-	width: 547px;
+	width: 543px;
 }
 
 .les1-item-p h1 {
@@ -362,20 +368,21 @@ p {
 /* les 2 */
 .les2-cont {
 	display: flex;
-	justify-content: space-between;
-	max-width: 1275px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 88.5%;
 	margin: 0 auto;
 	padding-top: 100px;
 	align-items: center;
 }
 
 .les2-item-img {
-	width: 588px;
+	width: 493px;
 }
 
 
 .les2-item-p {
-	width: 547px;
+	width: 543px;
 }
 
 .les2-item-p h1 {
@@ -389,20 +396,21 @@ p {
 /* les 3 */
 .les3-cont {
 	display: flex;
-	justify-content: space-between;
-	max-width: 1275px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 88.5%;
 	margin: 0 auto;
 	padding-top: 100px;
 	align-items: center;
 }
 
 .les3-item-img {
-	width: 588px;
+	width: 493px;
 }
 
 
 .les3-item-p {
-	width: 547px;
+	width: 543px;
 }
 
 .les3-item-p h1 {
@@ -426,9 +434,21 @@ p {
 	margin-top: 54px;
 }
 
-.download {
-	border-radius: 40px;
-	margin-top: 94px;
+.download-header a {
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	display: block;
+	background: #E88FBC;
+	width: 238.7px;
+	height: 82.63px;
+	border-radius: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 82.63px;
+	margin: 0 auto;
+	margin-top: 50px;
 }
 
 /* boek een workshop */
@@ -593,4 +613,288 @@ p {
 	max-height: none;
 	width: auto;
 	height: auto;
+}
+
+/* Footer */
+
+.footer-blob {
+	background-image: url('/assets/background/Group\ 151.png');
+	background-size: cover;
+	background-position: 0;
+	width: 100%;
+	height: 639px;
+	padding-top: 50px;
+	margin-top: 212px;
+}
+
+.logo-bottom {
+	display: block;
+	margin-left: 5%;
+	margin-top: 4%;
+	max-width: 10%;
+}
+
+.footer-cont {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 90%;
+	justify-content: space-around;
+	margin: 100px auto 0;
+}
+
+
+
+.footer-item h2 {
+	margin-bottom: 30px;
+}
+
+.footer-item p {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.footer-item {
+	width: 308px;
+}
+
+.footer-item-2 {
+	width: 10px;
+	background-color: black;
+}
+
+
+
+.footer-item-4 {
+	width: 10px;
+	background-color: black;
+}
+
+@media screen and (max-width: 425px) {
+	h1 {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 20px;
+
+	}
+
+	p {
+		font-weight: 500;
+		font-size: 20px;
+		text-align: center;
+		line-height: 25px;
+
+	}
+
+
+	/* header */
+
+	.none {
+		display: none;
+	}
+
+	.header-cont ul {
+		display: none;
+	}
+
+	.logo-top {
+		position: absolute;
+		z-index: 3;
+	}
+
+	.logo-top img {
+		max-width: 80%;
+	}
+
+	.hv3 {
+		position: absolute;
+		top: 2%;
+		left: 0;
+		z-index: 2;
+		scale: 0.7;
+	}
+
+	.hv6 {
+		position: absolute;
+		top: 60%;
+		left: 70%;
+		z-index: 2;
+		scale: 0.6;
+	}
+
+	.hv8 {
+		position: absolute;
+		top: 70%;
+		left: 2%;
+		z-index: 2;
+		scale: 0.5;
+	}
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		top: 8%;
+		left: 70%;
+	}
+
+	/* Workshop Kunst */
+
+	.kunst-cont {
+		max-width: 82%;
+		position: relative;
+	}
+
+	.kunst-item-img {
+		width: 320px;
+		margin-top: 200px;
+	}
+
+
+	.kunst-item-p {
+		width: 319px;
+		text-align: center;
+	}
+
+	.kunst-item-p h1 {
+		position: absolute;
+		top: 10%;
+	}
+
+	.kunst-item-p p {
+		margin-top: 50px;
+
+	}
+
+	/* Het lesplan */
+
+	.lesplan-header {
+		width: 72.6%;
+		margin: 100px auto 0;
+		text-align: center;
+
+	}
+
+	/* Les 1 */
+
+	.les1-cont {
+		max-width: 82%;
+		padding-top: 100px;
+		position: relative;
+	}
+
+
+
+	.les1-item-img img {
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		width: 251px;
+	}
+
+
+	.les1-item-p {
+		width: 319px;
+		margin-top: 320px;
+	}
+
+
+
+	.les1-item-p p {
+		margin-bottom: 0px;
+	}
+
+	/* les 2 */
+
+	.les2-cont {
+		max-width: 82%;
+		padding-top: 100px;
+	}
+
+	.les2-item-img {
+		width: 251px;
+		margin-bottom: 20px;
+	}
+
+
+	.les2-item-p {
+		width: 319px;
+	}
+
+	/* les 3 */
+	.les3-cont {
+		max-width: 82%;
+		padding-top: 100px;
+		position: relative;
+	}
+
+	.les3-item-img img{
+		position: absolute;
+		width: 251px;
+		top: 5%;
+		left: 10%;
+	}
+
+
+	.les3-item-p {
+		width: 319px;
+		margin-top: 320px;
+	}
+
+	/* download de workshop */
+
+.download-header {
+	width: 62%;
+	margin: 100px auto 0;
+	
+
+}
+
+.download-header h1{
+	font-size: 20px;
+}
+
+.download-header a {
+	width: 190px;
+	height: 49px;
+	border-radius: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+	/* footer */
+
+	.footer-blob {
+		height: 1000px;
+	}
+
+	.footer-item {
+		width: 269px;
+		margin-bottom: 50px;
+	}
+
+	.footer-cont p {
+		line-height: 10px;
+	}
+
+	.footer-item-2 {
+		display: none;
+	}
+
+	.footer-item-4 {
+		display: none;
+	}
+
+
+	.logo-bottom {
+		display: block;
+		position: absolute;
+		margin-left: 31%;
+		margin-top: 180%;
+		max-width: 40%;
+	}
 }
