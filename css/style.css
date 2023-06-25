@@ -176,7 +176,10 @@ p {
 }
 
 
-
+a{
+	text-decoration: none;
+	color: #090909;
+}
 
 
 /* Header */
@@ -411,6 +414,21 @@ p {
 	font-size: 30px;
 }
 
+#streep-links-1{
+	position: absolute;
+	width: 115.82px;
+	height: 68.02px;
+	margin-left: -5%;
+	margin-top: -4%;
+}
+
+#streep-rechts-1{
+	position: absolute;
+	width: 104.94px;
+	height: 61.64px;
+	margin-left: 30%;
+}
+
 .workshop-item-1 a {
 	text-align: center;
 	color: black;
@@ -438,72 +456,148 @@ p {
 
 /* Expositie */
 
+#expo-streep{
+	position: absolute;
+	width: 46.17px;
+	height: 23.64px;
+	margin-top: 11%;
+	margin-left: 7%;
+}
+
+#expo-ster{
+	position: absolute;
+	width: 30.01px;
+	height: 26.03px;
+	margin-top: 9%;
+	margin-left: 25%;
+}
+
+#expo-scribble{
+	position: absolute;
+	width: 101.32px;
+	height: 121.42px;
+	margin-top: 38%;
+	margin-left: -2%;
+}
+
+#expo-sterren-groep{
+	position: absolute;
+	/* width: 113.99px;
+	height: 78.58px; */
+	margin-top: -43%;
+	margin-left: 90%;
+}
+
+#expo-smiley-groen{
+	position: absolute;
+	width: 150.11px;
+	height: 120.1px;
+	margin-top: 40%;
+	margin-left: 60%;
+
+}
+
+ .expositie-cont {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 100px auto 0;
+}
+
+
 .next-button {
-	background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .prev-button {
-	background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 #gallery {
-	width: 1500px;
-	overflow: hidden;
-	position: relative;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 #gallery ul {
-	list-style-type: none;
-	width: calc(100% - 40px);
-	padding: 0;
-	margin: 0;
-	white-space: nowrap;
-	transition: transform 0.3s ease-in-out;
+    list-style-type: none;
+    width: calc(100% - 40px);
+    /* Adjust the width to accommodate the buttons */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out;
 }
 
 #gallery li {
-	display: inline-block;
-	width: 300px;
-	height: 200px;
-	padding: 0 10px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    padding: 0 10px;
 }
 
 #gallery li.first {
-	transform: scale(1.2);
-	z-index: 1;
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .prev-button,
 .next-button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background: none;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	z-index: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .prev-button {
-	left: -100px;
+    left: calc(min(0px, max(-100%, -100px)));
 }
 
 .next-button {
-	right: -100px;
+    right: calc(min(0px, max(-100%, -100px)));
 }
 
 .prev:hover,
 .next:hover {
-	opacity: .8;
+    opacity: .8;
 }
 
+@media (max-width: 680px) {
+    .prev-button {
+        width: 15%;
+        height: 50%;
+        left: calc(min(0px, max(-100%, 0px)));
+        opacity: .3;
+        /* background-color: #E88FBC; */
+        border-radius: 15px;
+    }
+
+    .next-button {
+        width: 15%;
+        height: 50%;
+        right: calc(min(0px, max(-100%, 0px)));
+        opacity: .3;
+        /* background-color: #E88FBC; */
+        border-radius: 15px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        opacity: .8;
+    }
+} 
 
 
 .mid-blob {
@@ -542,6 +636,32 @@ p {
 
 /* Docu */
 
+#docu-loop{
+	position: absolute;
+	width: 115.82px;
+	height: 68.02px;
+	margin-left: -2%;
+	margin-top: -5%;
+}
+
+#docu-swirl{
+	position: absolute;
+	width: 45px;
+	height: 42.79px;
+	margin-left: 45%;
+	margin-top: 0%;
+
+}
+
+#docu-hoek{
+	position: absolute;
+	width: 16.12px;
+	height: 18.72px;
+	margin-left: 39%;
+	margin-top: -1%;
+
+}
+
 .docu-header {
 	display: block;
 	width: 46.25%;
@@ -565,6 +685,38 @@ p {
 
 .video-cont span {
 	color: #FF5E00;
+}
+
+#video-links-boven{
+	position: absolute;
+	width: 84.28px;
+	height: 87.73px;
+	margin-left: 0%;
+	margin-top: -4%;
+}
+
+#video-links-onder{
+	position: absolute;
+	width: 84.28px;
+	height: 87.73px;
+	margin-left: 1%;
+	margin-top: -5%;
+}
+
+#video-rechts-onder{
+	position: absolute;
+	width: 84.28px;
+	height: 87.73px;
+	margin-left: 90%;
+	margin-top: -5%;
+}
+
+#video-rechts-boven{
+	position: absolute;
+	width: 84.28px;
+	height: 87.73px;
+	margin-left: 90%;
+	margin-top: -4%;
 }
 
 #videoBtn {
@@ -684,6 +836,22 @@ p {
 .footer-item-4 {
 	width: 10px;
 	background-color: black;
+}
+
+.scribble-socials{
+	position: absolute;
+	width: 84.28px;
+	height: 87.73px;
+	margin-left: 0%;
+	margin-top: -4%;
+}
+
+.line-versterk{
+	position: absolute;
+	width: 112.57px;
+	height: 14.72px;
+	margin-left: 7%;
+	margin-top: 4%;
 }
 
 /* icons */
