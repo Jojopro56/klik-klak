@@ -326,6 +326,28 @@ p {
 	margin-bottom: 60px;
 }
 
+#workshop-ster{
+	position: absolute;
+	margin-top: -4%;
+	margin-left: -5%;
+}
+
+.workshop-swirl{
+	position: absolute;
+	margin-top: -6%;
+	margin-left: 10%;
+}
+
+.workshop-strepen{
+	position: absolute;
+	margin-top: 35%;
+	margin-left: -5%;
+}
+
+.swirl{
+	display: none;
+}
+
 /* Het lesplan */
 
 .lesplan-header {
@@ -335,6 +357,17 @@ p {
 
 }
 
+.squigles-lesplan{
+	position: absolute;
+	margin-top: -3%;
+	margin-left: -12%;
+}
+
+.streep-lesplan{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 1%;
+}
 
 
 /* Les 1 */
@@ -366,6 +399,22 @@ p {
 	margin-bottom: 60px;
 }
 
+.roze-smiley-les{
+	position: absolute;
+	margin-left: 13%;
+	margin-top: -5%;
+}
+
+.loop-les-1{
+	position: absolute;
+	margin-top: -4%;
+}
+
+.streep-les-1{
+	position: absolute;
+	margin-top: 37%;
+	margin-left: -39%;
+}
 
 /* les 2 */
 .les2-cont {
@@ -393,6 +442,18 @@ p {
 
 .les2-item-p p {
 	margin-bottom: 60px;
+}
+
+.squigle-les-2{
+	position: absolute;
+	margin-top: -13%;
+	margin-left: 20%;
+}
+
+.les-smiley-geel{
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 35%;
 }
 
 /* les 3 */
@@ -423,6 +484,28 @@ p {
 	margin-bottom: 60px;
 }
 
+.strepen-les-3{
+	position: absolute;
+	margin-top: -1%;
+	margin-left: -7%;
+}
+
+.sterren-groep-les{
+	position: absolute;
+	margin-left: 30%;
+	margin-top: -8%;
+}
+
+.squigle-les-3{
+	display: none;
+}
+
+.squigle-les-3{
+	display: none;
+}
+
+
+
 /* download de workshop */
 
 .download-header {
@@ -452,6 +535,36 @@ p {
 	margin: 0 auto;
 	margin-top: 50px;
 }
+
+.download-hoek-lb{
+	position: absolute;
+	margin-top: -3%;
+	margin-left: -30%;
+}
+
+.download-hoek-rb{
+	position: absolute;
+	margin-top: -3%;
+	margin-left: 30%;
+}
+
+.download-hoek-lo{
+	position: absolute;
+	margin-top: 3%;
+	margin-left: -30%;
+}
+
+.download-hoek-ro{
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 30%;
+}
+
+.ster-blauw-download{
+	display: none;
+}
+
+
 
 /* boek een workshop */
 
@@ -617,6 +730,18 @@ p {
 	height: auto;
 }
 
+.strepen-boek-links{
+	position: absolute;
+	margin-top: .8%;
+	margin-left: -14%;
+}
+
+.strepen-boek-rechts{
+	position: absolute;
+	margin-top: -2.7%;
+	margin-left: 12%;
+}
+
 /* Footer */
 
 .footer-blob {
@@ -670,6 +795,25 @@ p {
 	width: 10px;
 	background-color: black;
 }
+
+.loop-boeking-workshop{
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 7.5%;
+}
+
+.line-versterk-workshop{
+	position: absolute;
+	margin-top: -11%;
+	margin-left: 7.5%;
+}
+
+.scribble-socials-workshop{
+	position: absolute;
+	margin-top: -7%;
+	margin-left: -3%;
+}
+
 
 @media screen and (max-width: 425px) {
 	h1 {
@@ -743,6 +887,31 @@ p {
 
 	/* Workshop Kunst */
 
+	#workshop-ster{
+		position: absolute;
+		margin-top: -20%;
+		margin-left: -22%;
+		scale: .5;
+	}
+
+	.workshop-swirl{
+		display: none;
+	}
+	
+	.workshop-strepen{
+		position: absolute;
+		margin-top: 75%;
+		margin-left: -16%;
+		scale: .5;
+	}
+
+	.swirl{
+		display: block;
+	}
+	
+	
+	
+
 	.kunst-cont {
 		max-width: 82%;
 		position: relative;
@@ -778,7 +947,44 @@ p {
 
 	}
 
+	.squigles-lesplan{
+		position: absolute;
+		margin-top: -7%;
+		margin-left: -35%;
+	}
+	
+	.streep-lesplan{
+		position: absolute;
+		margin-top: -3%;
+		margin-left: -10%;
+		scale: 0.9;
+	}
+	
+
 	/* Les 1 */
+
+	.streep-les-1{
+		position: absolute;
+		margin-top: 60%;
+		margin-left: -35%;
+		scale: 0.2;
+	}
+
+	.roze-smiley-les{
+		position: absolute;
+		margin-left: 60%;
+		margin-top: -10%;
+		scale: 0.6;
+	}
+	
+	.loop-les-1{
+		position: absolute;
+		margin-top: -22%;
+		margin-left: 20%;
+		scale: .6;
+	}
+	
+	
 
 	.les1-cont {
 		max-width: 82%;
@@ -809,6 +1015,21 @@ p {
 
 	/* les 2 */
 
+	.squigle-les-2{
+		position: absolute;
+		margin-top: -35%;
+		margin-left: 30%;
+		scale: .4;
+	}
+	
+	.les-smiley-geel{
+		position: absolute;
+		margin-top: -15%;
+		margin-left: -10%;
+		scale: .5;
+	}
+	
+
 	.les2-cont {
 		max-width: 82%;
 		padding-top: 100px;
@@ -825,6 +1046,28 @@ p {
 	}
 
 	/* les 3 */
+
+	.strepen-les-3{
+		position: absolute;
+		margin-top: -8%;
+		margin-left: 0%;
+		scale: .7;
+	}
+	
+	.sterren-groep-les{
+		position: absolute;
+		margin-left: 70%;
+		margin-top: -20%;
+		scale: .5;
+	}
+
+
+	.squigle-les-3{
+		position: absolute;
+		margin-left: 0%;
+		margin-top: 0%;
+	}
+
 	.les3-cont {
 		max-width: 82%;
 		padding-top: 100px;
@@ -846,26 +1089,70 @@ p {
 
 	/* download de workshop */
 
-.download-header {
-	width: 62%;
-	margin: 100px auto 0;
+	.download-hoek-lb{
+		position: absolute;
+		margin-top: -3%;
+		margin-left: -35%;
+	}
 	
+	.download-hoek-rb{
+		position: absolute;
+		margin-top: -3%;
+		margin-left: 35%;
+	}
+	
+	.download-hoek-lo{
+		position: absolute;
+		margin-top: 3%;
+		margin-left: -35%;
+	}
+	
+	.download-hoek-ro{
+		position: absolute;
+		margin-top: 3%;
+		margin-left: 35%;
+	}	
 
-}
+	.download-header {
+		width: 62%;
+		margin: 100px auto 0;
+	}
 
-.download-header h1{
-	font-size: 20px;
-}
+	.download-header h1{
+		font-size: 20px;
+	}
 
-.download-header a {
-	width: 190px;
-	height: 49px;
-	border-radius: 50px;
-	font-size: 20px;
-	line-height: 50px;
-	margin: 0 auto;
-	margin-top: 50px;
-}
+	.download-header a {
+		width: 190px;
+		height: 49px;
+		border-radius: 50px;
+		font-size: 20px;
+		line-height: 50px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.ster-blauw-download{
+		display: block;
+		margin-top: 25%;
+		margin-left: 25%;
+	}
+
+	/* boek een workshop */
+
+	.strepen-boek-links{
+		position: absolute;
+		margin-top: .8%;
+		margin-left: -17%;
+		scale: .6;
+	}
+	
+	.strepen-boek-rechts{
+		position: absolute;
+		margin-top: -8%;
+		margin-left: 13%;
+		scale: .6;
+	}	
 
 
 	/* footer */
@@ -899,4 +1186,23 @@ p {
 		margin-top: 180%;
 		max-width: 40%;
 	}
+
+	.loop-boeking-workshop{
+		display: none;
+	}
+	
+	.line-versterk-workshop{
+		position: absolute;
+		margin-top: -26%;
+		margin-left: 30%;
+	}
+	
+	.scribble-socials-workshop{
+		position: absolute;
+		margin-top: -24%;
+		margin-left: -5%;
+		scale: .6;
+	}
+	
+
 }
