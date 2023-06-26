@@ -103,6 +103,44 @@ header,
 hgroup,
 menu,
 nav,
+
+.burger-nav {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hamburger {
+	scale: 1.2;
+	cursor: pointer;
+	opacity: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+}
+
+.menu {
+	list-style-type: none;
+	display: none;
+}
+
+.menu li {
+	padding: 10px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content {
+	padding: 20px;
+}
+
 section {
 	display: block;
 }
@@ -176,7 +214,7 @@ p {
 }
 
 
-a{
+a {
 	text-decoration: none;
 	color: #090909;
 }
@@ -191,10 +229,6 @@ a{
 
 	width: 100%;
 	height: 423px;
-}
-
-.hamburger {
-	display: none;
 }
 
 .header-cont {
@@ -218,9 +252,9 @@ a{
 	max-width: 80%;
 }
 
-.header-cont nav {
+.normal-nav {
 	display: block;
-	position: relative;
+
 	margin-left: 5%;
 	width: 100%;
 	margin-bottom: 5%;
@@ -342,15 +376,15 @@ a{
 	margin-left: 334px;
 }
 
-.belang-loop{
+.belang-loop {
 	display: none;
 }
 
-.hoek-coderen{
+.hoek-coderen {
 	display: none;
 }
 
-.hoek-coderen-l{
+.hoek-coderen-l {
 	display: none;
 }
 
@@ -436,7 +470,7 @@ a{
 	font-size: 30px;
 }
 
-#streep-links-1{
+#streep-links-1 {
 	position: absolute;
 	width: 115.82px;
 	height: 68.02px;
@@ -444,7 +478,7 @@ a{
 	margin-top: -4%;
 }
 
-#streep-rechts-1{
+#streep-rechts-1 {
 	position: absolute;
 	width: 104.94px;
 	height: 61.64px;
@@ -475,15 +509,15 @@ a{
 	border-radius: 40px;
 }
 
-.smiley-workshop{
+.smiley-workshop {
 	display: none;
 }
 
-.squigly-workshop{
+.squigly-workshop {
 	display: none;
 }
 
-.ster-expo-blauw{
+.ster-expo-blauw {
 	display: none;
 }
 
@@ -491,7 +525,7 @@ a{
 
 /************************************************************************ Expositie ************************************************************************/
 
-#expo-streep{
+#expo-streep {
 	position: absolute;
 	width: 46.17px;
 	height: 23.64px;
@@ -499,7 +533,7 @@ a{
 	margin-left: 7%;
 }
 
-#expo-ster{
+#expo-ster {
 	position: absolute;
 	width: 30.01px;
 	height: 26.03px;
@@ -507,7 +541,7 @@ a{
 	margin-left: 25%;
 }
 
-#expo-scribble{
+#expo-scribble {
 	position: absolute;
 	width: 101.32px;
 	height: 121.42px;
@@ -515,7 +549,7 @@ a{
 	margin-left: -2%;
 }
 
-#expo-sterren-groep{
+#expo-sterren-groep {
 	position: absolute;
 	/* width: 113.99px;
 	height: 78.58px; */
@@ -523,7 +557,7 @@ a{
 	margin-left: 90%;
 }
 
-#expo-smiley-groen{
+#expo-smiley-groen {
 	position: absolute;
 	width: 150.11px;
 	height: 120.1px;
@@ -532,107 +566,134 @@ a{
 
 }
 
- .expositie-cont {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    margin: 100px auto 0;
+.expositie-cont {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+	margin: 100px auto 0;
 }
 
 
 .next-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
 }
 
 .prev-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
 }
 
 #gallery {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 #gallery ul {
-    list-style-type: none;
-    width: calc(100% - 40px);
-    /* Adjust the width to accommodate the buttons */
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    transition: transform 0.3s ease-in-out;
+	list-style-type: none;
+	width: calc(100% - 40px);
+	/* Adjust the width to accommodate the buttons */
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	transition: transform 0.3s ease-in-out;
 }
 
 #gallery li {
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    padding: 0 10px;
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	padding: 0 10px;
 }
 
 #gallery li.first {
-    transform: scale(1.2);
-    z-index: 1;
+	transform: scale(1.2);
+	z-index: 1;
 }
 
 .prev-button,
 .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    z-index: 100;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	z-index: 100;
 }
 
 .prev-button {
-    left: calc(min(0px, max(-100%, -100px)));
+	left: calc(min(0px, max(-100%, -100px)));
 }
 
 .next-button {
-    right: calc(min(0px, max(-100%, -100px)));
+	right: calc(min(0px, max(-100%, -100px)));
 }
 
 .prev:hover,
 .next:hover {
-    opacity: .8;
+	opacity: .8;
 }
 
 @media (max-width: 680px) {
-    .prev-button {
-        width: 15%;
-        height: 50%;
-        left: calc(min(0px, max(-100%, 0px)));
-        opacity: .3;
-        /* background-color: #E88FBC; */
-        border-radius: 15px;
-    }
 
-    .next-button {
-        width: 15%;
-        height: 50%;
-        right: calc(min(0px, max(-100%, 0px)));
-        opacity: .3;
-        /* background-color: #E88FBC; */
-        border-radius: 15px;
-    }
+	.burger-nav {
+		width: 50%;
+		height: 20px;
+	}
 
-    .prev:hover,
-    .next:hover {
-        opacity: .8;
-    }
-} 
+	.hamburger {
+		display: flex;
+		opacity: 1;
+	}
+
+	.normal-nav {
+		display: none;
+	}
+
+	.hv3 {
+		display: none;
+	}
+
+	.prev-button {
+		width: 15%;
+		height: 50%;
+		left: calc(min(0px, max(-100%, 0px)));
+		opacity: .3;
+		/* background-color: #E88FBC; */
+		border-radius: 15px;
+	}
+
+	.next-button {
+		width: 15%;
+		height: 50%;
+		right: calc(min(0px, max(-100%, 0px)));
+		opacity: .3;
+		/* background-color: #E88FBC; */
+		border-radius: 15px;
+	}
+
+	.prev:hover,
+	.next:hover {
+		opacity: .8;
+	}
+
+	#expo-sterren-groep {
+		display: none;
+	}
+
+	#expo-scribble {
+		display: none;
+	}
+}
 
 
 .mid-blob {
@@ -664,7 +725,7 @@ a{
 
 /************************************************************************ Docu ************************************************************************/
 
-#docu-loop{
+#docu-loop {
 	position: absolute;
 	width: 115.82px;
 	height: 68.02px;
@@ -672,7 +733,7 @@ a{
 	margin-top: -5%;
 }
 
-#docu-swirl{
+#docu-swirl {
 	position: absolute;
 	width: 45px;
 	height: 42.79px;
@@ -681,7 +742,7 @@ a{
 
 }
 
-#docu-hoek{
+#docu-hoek {
 	position: absolute;
 	width: 16.12px;
 	height: 18.72px;
@@ -715,7 +776,7 @@ a{
 	color: #FF5E00;
 }
 
-#video-links-boven{
+#video-links-boven {
 	position: absolute;
 	width: 84.28px;
 	height: 87.73px;
@@ -723,7 +784,7 @@ a{
 	margin-top: -4%;
 }
 
-#video-links-onder{
+#video-links-onder {
 	position: absolute;
 	width: 84.28px;
 	height: 87.73px;
@@ -731,7 +792,7 @@ a{
 	margin-top: -5%;
 }
 
-#video-rechts-onder{
+#video-rechts-onder {
 	position: absolute;
 	width: 84.28px;
 	height: 87.73px;
@@ -739,7 +800,7 @@ a{
 	margin-top: -5%;
 }
 
-#video-rechts-boven{
+#video-rechts-boven {
 	position: absolute;
 	width: 84.28px;
 	height: 87.73px;
@@ -867,7 +928,7 @@ a{
 	background-color: black;
 }
 
-.scribble-socials{
+.scribble-socials {
 	position: absolute;
 	width: 84.28px;
 	height: 87.73px;
@@ -875,7 +936,7 @@ a{
 	margin-top: -4%;
 }
 
-.line-versterk{
+.line-versterk {
 	position: absolute;
 	width: 112.57px;
 	height: 14.72px;
@@ -883,7 +944,7 @@ a{
 	margin-top: 4%;
 }
 
-.loop-boeking{
+.loop-boeking {
 	position: absolute;
 	width: 72.62px;
 	height: 64.54px;
@@ -972,9 +1033,6 @@ a{
 		display: none;
 	}
 
-	.header-cont ul {
-		display: none;
-	}
 
 	.logo-top {
 		position: absolute;
@@ -1009,14 +1067,6 @@ a{
 		scale: 0.5;
 	}
 
-	.hamburger {
-		display: block;
-		position: absolute;
-		top: 8%;
-		left: 70%;
-		
-	}
-
 	/* ********************************************************************************************************************************************** */
 
 	/************************************************************************ Belang van Code ************************************************************************/
@@ -1037,7 +1087,7 @@ a{
 		margin-top: 20px;
 	}
 
-	.belang-item-p h1{
+	.belang-item-p h1 {
 		position: absolute;
 		top: 15%;
 	}
@@ -1051,26 +1101,26 @@ a{
 		margin-top: 70px;
 	}
 
-	.belang-loop{
+	.belang-loop {
 		display: block;
 		margin-left: 5%;
 	}
 
-	.hoek-coderen{
+	.hoek-coderen {
 		display: inline-block;
 		margin-left: 100%;
 		margin-top: 0%;
-	
+
 	}
 
-	.hoek-coderen-l{
+	.hoek-coderen-l {
 		display: block;
 		margin-left: 0%;
 		margin-top: -20%;
 	}
 
 	/* ********************************************************************************************************************************************** */
-	
+
 	/************************************************************* Coderen voor kinderen *************************************************************/
 
 	.kruisje-sterretje {
@@ -1146,25 +1196,25 @@ a{
 
 	}
 
-	#streep-links-1{
+	#streep-links-1 {
 		display: block;
 		scale: 0.6;
 		margin-left: -20%;
 		margin-top: -8%;
 	}
 
-	#streep-rechts-1{
+	#streep-rechts-1 {
 		display: block;
 		scale: 0.6;
 		margin-left: 70%;
 		margin-top: -13%;
 	}
 
-	.smiley-workshop{
+	.smiley-workshop {
 		display: block;
 	}
 
-	.squigly-workshop{
+	.squigly-workshop {
 		display: block;
 		margin-top: -3%;
 		margin-left: -2%;
@@ -1174,31 +1224,31 @@ a{
 
 	/* *********************************************************************** expo ************************************************************************/
 
-	#expo-streep{
+	#expo-streep {
 		display: block;
 		margin-left: 27%;
 		margin-top: 44%;
 	}
 
-	#expo-ster{
+	#expo-ster {
 		display: block;
 		margin-left: 77%;
 		margin-top: 34%;
 	}
 
-	#expo-scribble{
-	display: none;
+	#expo-scribble {
+		display: none;
 	}
 
-	#expo-sterren-groep{
-	display: none;
+	#expo-sterren-groep {
+		display: none;
 	}
 
-	#expo-smiley-groen{
-	display: none;
+	#expo-smiley-groen {
+		display: none;
 	}
 
-	.ster-expo-blauw{
+	.ster-expo-blauw {
 		display: block;
 		margin-left: 25%;
 	}
@@ -1212,40 +1262,40 @@ a{
 		width: 79%;
 	}
 
-	#docu-loop{
+	#docu-loop {
 		display: none;
 	}
 
-	#docu-swirl{
+	#docu-swirl {
 		display: none;
 	}
 
-	#docu-hoek{
+	#docu-hoek {
 		display: none;
 	}
 
-	#video-links-boven{
+	#video-links-boven {
 		display: block;
 		scale: .3;
 		margin-top: 40%;
 		margin-left: -15%;
 	}
 
-	#video-rechts-boven{
+	#video-rechts-boven {
 		display: block;
 		scale: .3;
 		margin-top: 40%;
 		margin-left: 88%;
 	}
 
-	#video-links-onder{
+	#video-links-onder {
 		display: block;
 		scale: .3;
 		margin-top: -70%;
 		margin-left: -15%;
 	}
 
-	#video-rechts-onder{
+	#video-rechts-onder {
 		display: block;
 		scale: .3;
 		margin-top: -70%;
@@ -1287,20 +1337,20 @@ a{
 		max-width: 40%;
 	}
 
-	.scribble-socials{
+	.scribble-socials {
 		display: block;
 		scale: .7;
 		margin-top: -12%;
 		margin-left: 4%;
 	}
 
-	.line-versterk{
+	.line-versterk {
 		display: block;
 		scale: .4;
 		margin-left: 36%;
 	}
 
-	.loop-boeking{
+	.loop-boeking {
 		display: none;
 	}
 

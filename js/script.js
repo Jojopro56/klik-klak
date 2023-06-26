@@ -1,6 +1,6 @@
 var gallery = document.getElementById("gallery");
 var imageList = document.getElementById("imageList");
-var images = imageList.getElementsByTagName("li");
+const images = imageList.getElementsByTagName("li");
 var currentIndex = 0;
 
 var prevButton = document.querySelector(".prev");
@@ -77,43 +77,18 @@ toggleButton2.addEventListener('click', function () {
     }
 });
 
-/*submit button functions*/
-function emptyFields() {
-  const textarea = document.querySelector('.input-message');
-  const input = document.querySelector('.input-mail');
-  const button = document.querySelector('.submit-message');
+// hamburger menu 
 
-  if (textarea.value === '' || textarea.value === textarea.placeholder ||
-      input.value === '' || input.value === input.placeholder) {
-      button.classList.add('shake');
-      setTimeout(() => {
-          button.classList.remove('shake');
-      }, 400);
-  } else {
-      textarea.value = '';
-      input.value = '';
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  var menu = document.querySelector('.menu');
+  menu.style.display = 'none';
+});
+
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
 }
 
-/*4*/
 
-const modal4 = document.getElementById('myModal-4');
-const btn4 = document.querySelector('.submit-message');
-const span4 = document.getElementsByClassName('close4')[0];
 
-// Open 
-btn4.addEventListener('click', function () {
-    modal4.style.display = 'block';
-});
 
-// Dicht
-span4.addEventListener('click', function () {
-    modal4.style.display = 'none';
-});
-
-// klik zone als je uit de post wilt
-window.addEventListener('click', function (event) {
-    if (event.target === modal4) {
-        modal4.style.display = 'none';
-    }
-});
